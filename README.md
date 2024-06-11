@@ -27,8 +27,8 @@ This terraform resource platform builds:
 ## Important Configuration for use
 
 
-| First Header  | Second Header |
+| File Name  | Reasons |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
+| Locals. tf  | Can change the Security group ingress and egress options for the public/private EC2 instance, Currently it allows all ports for the EC2 public instance  |
+| main.tf  | Can change the alb module target port(default 8000), listener port(80)   |
+| main.tf  | Must specify the key name, public, or private key so that the user data can work.   |
